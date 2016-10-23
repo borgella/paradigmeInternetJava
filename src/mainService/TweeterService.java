@@ -76,8 +76,9 @@ public class TweeterService {
         ****************************** Fin des ajoouts dans notre Base de donnée  ***************************************************
         */
         
-        UserDAOImplementation jsonUserDao = new UserDAOImplementation(listUtilisateurs); //Classe adapteur cette classe peut etre modifier pour faire le
-                                                                           // traitement en utilisant une base de donnée SQL ou MySql
+        //Classe adapteur, cette classe peut etre modifier pour faire le
+        // traitement en utilisant une base de donnée SQL ou MySql
+        UserDAOImplementation jsonUserDao = new UserDAOImplementation(listUtilisateurs); 
         
         DaoUtilisation jsonUser = new DaoUtilisation(jsonUserDao);// Classe cliente qui ne changera pas et utilisera toujours
                                                                          // un Objet UserDAOImplementation  
