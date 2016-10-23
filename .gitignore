@@ -1,0 +1,17 @@
+# Git ignore files
+*.xml
+*.iml
+*.txt
+
+# ignore all folders like
+.idea/
+.jacocoverage/
+lib/
+test/
+nbproject/
+build/
+public/images/
+
+# ignore all Mac Os folders 
+DS_STORE
+Dockerfile

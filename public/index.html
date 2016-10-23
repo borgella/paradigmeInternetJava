@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tweeter</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+</head>
+<body >
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <a class="navbar-brand" href="#">Tweeter Users</a>
+      <form class="navbar-form navbar-left" role="search" id="user-search-form">
+        <div class="input-group input-group-md">
+          <input type="text" class="form-control" placeholder="Enter an Integer like [0 9]" id="user-input">
+          <span class="input-group-btn">
+                <button id="login" class="btn btn-default">Login</button>
+          </span>
+        </div>
+      </form>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="jumbotron">
+       <div class="input-group input-group-lg">
+            <input type="text" class="form-control" placeholder="Tweet message less than 140 caracters" id="message">
+            <span class="input-group-btn">
+                <button id="post" class="btn btn-default">Post Tweet</button>
+            </span>
+        </div>
+    </div><!--fin div jumbotron -->
+    <div class="jumbotron">
+        <div class="row">
+            <div class="col-lg-7" id="fil_utilisateur"> </div>
+
+            <div class="col-lg-3" id="fil_abonnes"> </div>    
+      
+            <div class="col-lg-2" id="app_utlisateur"> </div>
+      
+        </div> <!-- fin div row --> 
+    </div><!--fin div jumbotron -->
+  </div> <!-- fin div container -->
+  <script src="thescript.js" type="text/javascript"></script>
+</body>
+</html>

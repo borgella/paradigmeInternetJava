@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>NoLine</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style>
+
+  .full {
+      background: url('http://previews.123rf.com/images/igordutina/igordutina1101/igordutina110100075/8552962-Mediterranean-food-ingredients-on-white-background-not-isolated-Stock-Photo.jpg') no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+      -o-background-size: cover;
+  }
+
+    /* Remove the navbar's default rounded borders and increase the bottom margin */
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+
+    /* Remove the jumbotron's default bottom margin */
+     .jumbotron {
+      margin-bottom: 0;
+    }
+
+    /* Add a gray background color and some padding to the footer */
+    footer {
+	  background-color: #f2f2f2;
+      padding: 25px;
+    }
+  </style>
+</head>
+<body class= "full">
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>Online Store</h1>
+    <p>Mission, Vission & Values</p>
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">NoLine</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="accueil1.html">Accueil</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Combos</a></li>
+        <li><a href="#">Trouver un restaurant</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a data-toggle="modal" data-target="#modalIns"><span class="glyphicon glyphicon-pencil"></span> S'inscrire</a></li>
+        <li><a data-toggle="modal" data-target="#modalCon"><span class="glyphicon glyphicon-user"></span> Se connecter</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Panier</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Modal Inscriptioncontent-->
+<div class="modal fade" id="modalIns" role="dialog">
+	<div class="modal-dialog">
+
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">
+					&times;
+				</button>
+				<h4 class="modal-title">Inscription</h4>
+			</div>
+			<div class="modal-body">
+				<form method="post" name= "formInscription" id="formInscription" action="inscription.php">
+					<div class="form-group">
+						<label for="Nom">Nom:</label>
+						<input type="text" class="form-control" id="nom">
+					</div>
+					<div class="form-group">
+						<label for="Prenom">Prenom:</label>
+						<input type="text" class="form-control" id="prenom">
+					</div>
+					<div class="form-group">
+						<label for="email">Addresse email:</label>
+						<input type="email" class="form-control" id="email">
+					</div>
+					<div class="form-group">
+						<label for="password">Mot de passe:</label>
+						<input type="password" class="form-control" id="password">
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox">
+							Rester connecte</label>
+					</div>
+					<button type="submit" class="btn btn-default">
+						Soumettre
+					</button>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">
+					Fermer
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal Connexion-->
+<div id="modalCon" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">
+					&times;
+				</button>
+				<h4 class="modal-title">Connexion</h4>
+			</div>
+			<div class="modal-body">
+				<form method="post" name= "formConnexion" id="formConnexion" action="">
+					<div class="form-group">
+						<label for="email">Addresse email:</label>
+						<input type="email" class="form-control" id="email">
+					</div>
+					<div class="form-group">
+						<label for="password">Mot de passe:</label>
+						<input type="password" class="form-control" id="pwd">
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox">
+							Rester connecte</label>
+					</div>
+					<button type="submit" class="btn btn-default">
+						Soumettre
+					</button>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">
+					Fermer
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">SHISH TAOUK</div>
+        <div class="panel-body"><img src="http://www.bashamarchejeantalon.ca/assets/images/Basha.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Chawarma de poulet grillé sur une broche et servi émietté. Il est habituellement accompagné d'une sauce à base de yogourt et d'ail.</div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-danger">
+        <div class="panel-heading">KEBBEH</div>
+        <div class="panel-body"><img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Kibbeh3.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Le kebbeh est constitué d'une pâte formée de viande hachée et de boulghour. Cette pâte forme des boulettes qui sont fourrée avec une farce de viande et parfumée d'épices et d'herbes</div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-success">
+        <div class="panel-heading">KEBAB</div>
+        <div class="panel-body"><img src="http://www.casablancamedicuisine.com/images/banner3.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">
+          <a href="#"><span class="glyphicon glyphicon-info-sign"></span> En savoir plus</a></div>
+      </div>
+    </div>
+  </div>
+</div><br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Taboulé</div>
+        <div class="panel-body"><img src="http://static1.squarespace.com/static/56072055e4b03eb8da7ffc88/56072adae4b041f4f55e1de3/56072d7fe4b0392b97666d61/1443311022253/?format=1500w" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Le taboulé est une salade à base principalement de persil, grain de couscous, de tomates, de jus de citron, d'huile d'olive et de feuilles de menthe fraîche</div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">BLACK FRIDAY DEAL</div>
+        <div class="panel-body"><img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">BLACK FRIDAY DEAL</div>
+        <div class="panel-body"><img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+      </div>
+    </div>
+  </div>
+</div><br><br>
+
+<footer class="container-fluid text-center">
+  <p>Online Store Copyright</p>
+  <form class="form-inline">Get deals:
+    <input type="email" class="form-control" size="50" placeholder="Email Address">
+    <button type="button" class="btn btn-danger">Sign Up</button>
+  </form>
+</footer>
+
+</body>
+</html>
