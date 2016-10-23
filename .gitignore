@@ -13,5 +13,5 @@ build/
 public/images/
 
 # ignore all Mac Os folders 
-DS_STORE
+.DS_Store
 Dockerfile
