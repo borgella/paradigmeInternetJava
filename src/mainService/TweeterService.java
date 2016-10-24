@@ -84,18 +84,18 @@ public class TweeterService {
                                                                          // un Objet UserDAOImplementation
         
         // On ajoute les différentes routes que notre serveur traitera
-        ArrayList<Route> listControler = new ArrayList(8);
+        ArrayList<Route> routes = new ArrayList(8);
         
-        listControler.add(new RouteGetFil(jsonUser));
-        listControler.add(new RouteGetAbonnements(jsonUser));
-        listControler.add(new RouteAddGetDeleteAbonnes(jsonUser));
-        listControler.add(new RouteGetPostTweets(jsonUser));
-        listControler.add(new RouteGetDeleteATweet(jsonUser));
-        listControler.add(new RouteDeletePutRetweet(jsonUser));
-        listControler.add(new RouteGetRetweets(jsonUser));
-        listControler.add(new RouteGetAppUsers(jsonUser,listUtilisateurs));
+        routes.add(new RouteGetFil(jsonUser));
+        routes.add(new RouteGetAbonnements(jsonUser));
+        routes.add(new RouteAddGetDeleteAbonnes(jsonUser));
+        routes.add(new RouteGetPostTweets(jsonUser));
+        routes.add(new RouteGetDeleteATweet(jsonUser));
+        routes.add(new RouteDeletePutRetweet(jsonUser));
+        routes.add(new RouteGetRetweets(jsonUser));
+        routes.add(new RouteGetAppUsers(jsonUser,listUtilisateurs));
         
-        Router router = new Router(listControler);
+        Router router = new Router(routes);
         
         System.out.println("Le client se connecte sur le port " + port + "...\n");
         
