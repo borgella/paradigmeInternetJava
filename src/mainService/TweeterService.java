@@ -65,7 +65,7 @@ public class TweeterService {
         ******************************  Fin de la preparation des Utilisateurs ******************************************************
         */
         /*
-        ******************************  Ajout des utilisateurs dans notre " List ArrayList" *******************************
+        ************* Ajout des utilisateurs dans notre " List ArrayList" qui sert de Base de données pour l'instant *****************
         */
         listUtilisateurs.add(toto);
         listUtilisateurs.add(marie);
@@ -76,12 +76,14 @@ public class TweeterService {
         ****************************** Fin des ajoouts dans notre Base de donnée  ***************************************************
         */
         
-        //Classe adapteur, cette classe peut etre modifier pour faire le
-        // traitement en utilisant une base de donnée SQL ou MySql
+        //Classe adapteur, cette classe peut être modifier pour faire le
+        // traitement en utilisant une base de donnée SQL, MySql ou MongoDB
         UserDAOImplementation jsonUserDao = new UserDAOImplementation(listUtilisateurs); 
         
         DaoUtilisation jsonUser = new DaoUtilisation(jsonUserDao);// Classe cliente qui ne changera pas et utilisera toujours
-                                                                         // un Objet UserDAOImplementation  
+                                                                         // un Objet UserDAOImplementation
+        
+        // On ajoute les différentes routes que notre serveur traitera
         ArrayList<Route> listControler = new ArrayList(8);
         
         listControler.add(new RouteGetFil(jsonUser));
