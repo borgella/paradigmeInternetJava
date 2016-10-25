@@ -14,8 +14,10 @@
 
 
 *Afin de simplifier l'API et de rester sur l'essentiel du projet, tous les ID utilisateurs sont compris entre 0-9. Le projet est
-divisé en 5 packages distincts*  
-** Architecture du projet = MVC**
+divisé en 5 packages distincts*
+
+
+*Architecture du projet  Pour l'architecture projet*
 
 ** Conception du projet et l'explication sur les différents packages **
 *
