@@ -1,15 +1,15 @@
 ### Projet d'étude pour le cours de paradigme des échanges internet INF4375
 
-*Le but du projet est la mise en place d’un serveur web de bas niveau (utilisation des sockets) sur lequel est bâti un service web pour traiter les différentes requêtes d’un client (navigateur web) à l’aide du protocole Http et l’API  Rest de Tweeter. Pour ce projet on a définit un API pour :*
+*Le but du projet est la mise en place d’un serveur web de bas niveau (utilisation des sockets) sur lequel est bâti un service web pour traiter les différentes requêtes d’un client (navigateur web) à l’aide du protocole Http et l’API  Rest de Tweeter. Pour ce projet on a définit un API qui définit tous les actions possibles par un utilisateur :*
 
-1. *Retourner le fil d'un utilisateur = "/utilisateurs/[0-9]+/fil"*
-2. *Avoir la liste de tous les abonnés d'un utilisateur = "/utilisateurs/[0-9]+/abonnements"*
-3. *Ajouter, retourner et supprimer un abonné dans la liste d'un utilisateur = "/utilisateurs/[0-9]+/abonnements/[0-9]+"*
-4. *Avoir la liste de tous les tweets d'un utilisateur ou créer un tweet en particulier = "/utilisateurs/[0-9]+/tweets*
-5. *Avoir un tweet en particulier ou de supprimer un tweet d'un utilisateur = "/utilisateurs/[0-9]+/tweets/[0-9]+"*
-6. *Avoir la liste de tous les retweets d'un utilisateur ou d'en créer un = "/utilisateurs/[0-9]+/retweets"*
-7. *Avoir un retweet en particulier d'un utilisateur ou d'en supprimer un = "/utilisateurs/[0-9]+/retweets/[0-9]+"*
-8. *Finalement avoir la liste de tous les utilisateurs du système = "/users/[0-9]+"*
+1. *Avoir le fil d'un utilisateur = Verbe HTTP utilisé: GET, Ressource: "/utilisateurs/[0-9]+/fil"*
+2. *Avoir la liste de tous ses abonnés = Verbe HTTP utilisé: GET, Ressource: "/utilisateurs/[0-9]+/abonnements"*
+3. *Avoir, ajouter ou supprimer un abonné = Verbe HTTP utilisé:GET,PUT,DELETE, Ressource: "/utilisateurs/[0-9]+/abonnements/[0-9]+"*
+4. *Avoir la liste de tous ses tweets ou créer un tweet = Verbe HTTP utilisé: GET,POST, Ressource: "/utilisateurs/[0-9]+/tweets
+5. *Avoir un tweet ou en supprimer un = Verbe HTTP utilisé: GET,DELETE, Ressource: "/utilisateurs/[0-9]+/tweets/[0-9]+"*
+6. *Avoir la liste de tous ses retweets ou en créer un = Verbe HTTP utilisé: GET,PUT, Ressource: "/utilisateurs/[0-9]+/retweets"*
+7. *Avoir un retweet ou en supprimer un = Verbe HTTP utilisé: GET,DELETE, Ressource: "/utilisateurs/[0-9]+/retweets/[0-9]+"*
+8. *Finalement avoir la liste de tous les utilisateurs du système = Verbe HTTP utilisé: GET, Ressource: "/users/[0-9]+"*
 
 
 *Afin de se concentrer sur l'essentiel du projet, tous les ID des utilisateurs sont des entiers compris entre 0-9. L'utilisation d'une base de donées n'est pas requise et un arrayList d'objets est suffisant pour sauvegarder les utilisateurs du systéme.*
