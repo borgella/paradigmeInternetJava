@@ -2,7 +2,7 @@
 
 *Le but du projet est la mise en place d’un serveur web de bas niveau (utilisation des sockets) sur lequel est bâti un service web pour traiter les différentes requêtes d’un client (navigateur web) à l’aide du protocole Http et l’API  Rest de Tweeter. Pour ce projet on a construit l'API pour :* 
 *
-1. Retourner le fil d'un utilisateur = "/utilisateurs/[0-9]+/fil"
+1. Item 1 Retourner le fil d'un utilisateur = "/utilisateurs/[0-9]+/fil"
 2. Avoir la liste de tous les abonnés d'un utilisateur = "/utilisateurs/[0-9]+/abonnements"
 3. Ajouter, retourner et supprimer un abonné dans la liste d'un utilisateur = "/utilisateurs/[0-9]+/abonnements/[0-9]+"
 4. Avoir la liste de tous les tweets d'un utilisateur ou créer un tweet en particulier = "/utilisateurs/[0-9]+/tweets 
