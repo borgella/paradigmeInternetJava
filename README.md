@@ -1,4 +1,4 @@
-## Projet d'étude pour le cours de paradigme des échanges internet INF4375
+### Projet d'étude pour le cours de paradigme des échanges internet INF4375
 
 *Le but du projet est la mise en place d’un serveur web de bas niveau (utilisation des sockets) sur lequel est bâti un service web pour traiter les différentes requêtes d’un client (navigateur web) à l’aide du protocole Http et l’API  Rest de Tweeter. Pour ce projet on a définit un API pour :*
 
