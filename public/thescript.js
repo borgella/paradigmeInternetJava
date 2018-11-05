@@ -129,7 +129,7 @@ function renderUsersApplication(users,model) {
 }
 
 /*
- * Fonction controleur qui sont abonnes a certaine partie de la vue
+ * Fonction controleur qui sont abonnes a certaine partie du model
  */
 
 function bindInputController(model){
