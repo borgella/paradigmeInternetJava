@@ -31,6 +31,7 @@ public class Request {
     }
     
     public Request(String ligne) throws Error {
+        //to try github rest-api
         uriRessource = ligne;
         body = new StringBuilder();
         contentType = (uriRessource.endsWith(".html")) ? "text/html" : "text/js";
